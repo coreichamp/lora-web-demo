@@ -8,4 +8,4 @@ services:
     expose:
       - 80
     volumes:
-      - ./www/:/www-data/
+      - ./www/:/www-data/:ro
