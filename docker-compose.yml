@@ -1,11 +1,11 @@
-version: "2"
+version: "3.4"
 services:
   web:
-    image: nginx:latest
+    build: .
     container_name: lora_web_demo
     ports:
       - "8080:80"
     expose:
       - 80
     volumes:
-      - ./web-data:/var/www/html/website
+      - ./www/:/www-data/
